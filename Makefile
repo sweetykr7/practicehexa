@@ -35,7 +35,7 @@ db_log:
 	docker logs -f postgres17
 
 db_del:
-	docker volume rm practice_sample_crud_demo_postgres17
+	docker volume rm hexapractice_demo_postgres17
 
 re : down up
 .PHONY : all up down clean fclean re
