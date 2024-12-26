@@ -1,1 +1,1 @@
-V1_0_0__init_schema.sql
+CREATE EXTENSION IF NOT EXISTS "uuid-ossp";

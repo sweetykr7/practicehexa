@@ -5,7 +5,7 @@ CREATE TABLE IF NOT EXISTS todo (
                                     status      VARCHAR(255),
     created_at  TIMESTAMP       DEFAULT NOW(),
     updated_at  TIMESTAMP,
-    deleted_At  TIMESTAMP
+    deleted_At  TIMESTAMP,
 
     CONSTRAINT pk_todo PRIMARY KEY (id)
     );
@@ -18,4 +18,4 @@ COMMENT ON COLUMN todo.content     IS '할 일 내용';
 COMMENT ON COLUMN todo.status      IS '상태';
 COMMENT ON COLUMN todo.created_at  IS '생성일';
 COMMENT ON COLUMN todo.updated_at  IS '마지막 수정일';
-COMMENT ON COLUMN todo.deleted_At  IS '삭제일';
+COMMENT ON COLUMN todo.deleted_at  IS '삭제일';

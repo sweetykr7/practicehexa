@@ -23,6 +23,7 @@ public class TodoCommandAdapter implements TodoCommandPort {
         var existTodo = todoJpaRepository.findById(todo.getId()).orElseThrow(
                 () -> new IllegalArgumentException("todo not found")
         );
+        System.out.println("todo update: " + todo.getContent());
         existTodo.prepareUpdate()
                 .content(todo.getContent())
                 .update();

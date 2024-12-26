@@ -36,7 +36,8 @@ public class TodoEntity extends BaseTimeEntity {
 
     @Builder(builderMethodName = "prepareUpdate", buildMethodName = "update")
     public void updateTodo(String content) {
-        Objects.requireNonNull(content, "title cannot be null");
+        Objects.requireNonNull(content, "content cannot be null");
+        this.content = content;
     }
 
     public void softDelete() {
